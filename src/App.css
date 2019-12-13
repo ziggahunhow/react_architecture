@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.cacheContent {
+  min-height: 300px;
+}
+
+.apiComponent {
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+}
