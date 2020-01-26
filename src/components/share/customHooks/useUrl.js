@@ -4,7 +4,9 @@ import { useHistory } from "react-router-dom";
 function useUrl(url) {
   const history = useHistory();
   useEffect(() => {
-    history.push(`/${url}`);
+    if (url) {
+      history.push(`/${url}`);
+    }
   }, [url]);
 }
 

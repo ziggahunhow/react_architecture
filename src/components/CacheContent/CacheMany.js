@@ -29,7 +29,7 @@ function CacheMany(props) {
       });
   const { data, error } = useSWR("/todo/many", fetcher);
   return (
-    <div style={{ minHeight: "400px" }}>
+    <div>
       <p>{(data && data.length > 0 && data[0].title) || "loading..."}</p>
       <button onClick={() => setIsLoadMore(i => !i)}>Click to load more</button>
       {isloadMore && <LoadMore />}

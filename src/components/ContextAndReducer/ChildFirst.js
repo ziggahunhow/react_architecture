@@ -17,7 +17,7 @@ function ChildFirst() {
   }, [id]);
 
   return (
-    <div className="flex">
+    <div className="flex justify-center">
       <p style={{ marginRight: "10px" }}>First child: </p>
       <p>{contextData.item.id}</p>
       <button onClick={handleClick}>Click me to update id</button>
